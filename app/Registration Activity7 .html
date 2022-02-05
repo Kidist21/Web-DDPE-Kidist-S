@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Life hacks">
+<meta name="keyword" content="True Believer, Eric Hoffer, Self-Education, life hacks">
+<meta name="author" content="Kidist samuel">
+
+<title>Life Hacks</title>
+
+<script>
+
+const object = {};
+object.addObject = function(info){
+	info.preventDefault();
+	object.fname = document.getElementById("fname").value;
+	object.phone = document.getElementById("phone").value;
+	object.age = document.getElementById("age").value;
+	object.color = document.getElementById("color").value;
+
+	object.print= function(info) {
+		
+		info.preventDefault();
+		document.getElementById("text").innerHTML  = "First Name: " + this.fname + "\nPhone: " + this.phone + "\nAge: " + this.age + "\nColor: " + this.color + " Airplane";
+	}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<table width="100%">
+   <tr>
+      <td width="10%"></td>
+	  <td><img src="../../resources/images/logo_gold.png" alt="logo" width ="60" height="100"></td>
+      <td align="right">
+		  <a href="index.html">Podcasts </a>
+		  <a href="index.html"> | Article | </a>
+		  <a href="index.html"> About us | </a>
+		  <a href="index.html"> Contact us</a>
+		  <a href="#"> Register</a>
+		  <a href="signin.html"> Signin</a>
+		  <a href="../image map/image map.html"> Home</a>
+		</td>
+      <td width="10%"></td>
+   </tr>
+
+</table>
+<hr>
+
+<table width="100%">
+
+   <tr> 
+      <td colspan="4" align="right"> <a href="index.html"> Go to bottom </a></td>
+   </tr>
+
+   <tr>
+      <td  width="10%"></td>
+      <td width=60%>
+	  
+	  <form>
+		<h2>Register</h2>
+		<label for="fname">Full name</label><br>
+		<input type="text" id="fname" name="fname" max="50" size="50%" required><br><br> 
+		<label for="phone">Phone</label><br>
+		<input type="tel" id="phone" name="phone" size="50%" required><br><br> 
+		<label for="age">Age</label><br>
+		<input type="number" id="age" name="age" min="18" max="50" required><br><br> 
+		<label for="color">Your Favorite Color</label><br>
+		<input type="color" id="color" name="color"><br><br>
+		
+        
+        <br>
+            <button onclick="object.addObject(event)">Add Info</button>
+			<button onclick="object.print(event)">Display</button>
+			<br>
+            <textarea id="text" rows="10" cols="25" ></textarea>
+		
+			<label for="BD">Birthdate</label><br>
+		<input type="date" id="BD" name="BD"><br><br>
+		<label>Gender</label><br>
+		<label for="female">Female</label>
+		<input type="radio" id="female" name="gender" value="Female">
+		<label for="male">Male</label>
+		<input type="radio" id="male" name="gender" value="Male"><br><br>
+		<label for="pwd">Password</label><br>
+		<input type="password" id="pwd" name="pwd" min="6" max="32"><br><br> 
+		<label for="pwd">Confim Password</label><br>
+		<input type="password" id="pwd" name="pwd" min="6" max="32"><br><br> 
+		<label>Skills</label>
+		<ul>
+		<li>
+			<input type="checkbox" id="html" name="skills" value="HTML">
+			<label for="html">HTML</label>
+		</li>
+		<li>
+			<input type="checkbox" id="css" name="skills" value="CSS">
+			<label for="css">CSS</label>
+		</li>
+		<li>
+			<input type="checkbox" id="js" name="skills" value="JavaScipt">
+			<label for="js">JavaScipt</label>
+		</li>
+		<li>
+			<input type="checkbox" id="php" name="skills" value="PHP">
+			<label for="php">PHP</label>
+		</li>
+			
+		</ul>
+		<label>Country</label>
+		<select>
+			<option>Ethiopia</option>
+			<option>London</option>
+			<option>Europe</option>
+		</select>
+		<br><br>
+		<label>Photo</label><br>
+		<input type="file"><br>
+		<label>Describe yourself</label><br>
+		<textarea cols="30" rows="20"></textarea>
+		
+		<br>
+			<input type="submit">
+			<input type="reset">
+		
+	  </form>
+		
+      </td>
+
+      <td width="20%">
+	<h2>Recent Posts</h2>
+	<ul>
+	   <li><h4>Articles</h4></li>
+		<ul>
+		   <li>The Importance of Goals, Especially During Difficult Times</li>
+		   <li>5 Steps to Discovering Your Life Purpose In 2022!</li>
+		</ul>
+	   <li><h4>Ideas</h4></li>
+		<ul>
+		   <li>10 Books to Read in The Fall</li>
+		   <li>Top Web Development Projects Ideas</li>
+		
+		</ul>
+	</ul>
+	<h3> Most Viewed Articles</h3>
+	<ol type="I">
+	   <li>Instant Gratification Is Stopping You From Reaching Your Goals!</li>
+	   <li> Stop Juggling Between Work And Life</li>
+		</ol>
+		<h3>Ip project leaders</h3>
+		<pre>
+	---------------------------------
+	Rank    Award 
+	---------------------------------
+	First   Free hosting and support 
+	Second  5GB Mobile Data 
+	Third   1GB Mobile Data 
+	---------------------------------- 
+		</pre>
+	  </td>
+	  <td width="10%"></td>
+   </tr>
+   <tr>
+	   <td width="10%"></td>
+	   <td width="60%"><hr></td>
+   </tr>
+   <tr>
+	   <td width="10%"></td>
+	   <td width="60%">
+		   <h3>New Podcast</h3>
+		   <h2>Jack Ma - How I Overcame Failure</h2>
+		   <audio controls>
+			   <source src="../../resources/audio/Jack Ma - How I Overcame Failure.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		   </audio>
+	   </td>
+   </tr>
+   <tr>
+		<td width="10%"></td>
+		<td width="60%"><hr></td>
+	</tr>
+	<tr>
+		<td width="10%"></td>
+		<td width="60%">
+			<h3>Pick of The Weak</h3>
+			<h2>24 Hours A Day</h2>
+			<video width="95%" controls>
+				<source src="../../resources/video/24_HOURS.mp4" type="video/mp4">
+			</video>
+		</td>
+		<td width="20%"></td>
+		<td width="10%"></td>
+	</tr>
+	<tr>
+		<td><br></td>
+	</tr>
+	<tr>
+		<td width="10%"></td>
+		<td colspan="2"><hr></td>
+		<td width="10%"></td>
+	</tr>
+	<tr>
+		<td width="10%"></td>
+		<td width="60%">Follow us On:<a href="#">Facebook | </a>
+			<a href="#"> Twitter</a> </td>
+		<td width="20%" align="right"><a href="#">Privacy | </a>
+			<a href="#"> Terms of Use</a></td>
+	</tr>
+	<tr>
+		<td><br></td>
+	</tr>
+	<tr>
+		<td width="10%"></td>
+		<td width="10%" align="center">Copyright © AASTU SEng 2021, All Rights Reserved</td>
+
+	</tr>
+</table>
+
+</body>
+</html>
